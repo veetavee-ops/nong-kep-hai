@@ -1,0 +1,18 @@
+# STT Server
+torch
+transformers
+accelerate
+soundfile
+librosa
+
+# API Server
+fastapi
+uvicorn
+python-multipart
+
+# Database
+psycopg2-binary
+
+# Utils
+python-dotenv
+requests
