@@ -9,6 +9,7 @@ librosa
 fastapi
 uvicorn
 python-multipart
+httpx
 
 # Database
 psycopg2-binary
@@ -16,3 +17,6 @@ psycopg2-binary
 # Utils
 python-dotenv
 requests
+
+# Rich Menu image generation
+pillow
