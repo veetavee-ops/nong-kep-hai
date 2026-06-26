@@ -486,7 +486,6 @@ async def _postback_summary(user_id: str, reply_token: str):
 
     await reply_to_line(reply_token, "\n".join(lines))
 
-
 async def download_line_content(message_id: str) -> bytes:
     """ดาวน์โหลดไฟล์จาก LINE"""
     

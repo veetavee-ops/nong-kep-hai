@@ -89,10 +89,10 @@ def get_recent_intents(line_user_id: str, limit: int = 5):
     with get_connection() as conn:
         with conn.cursor() as cur:
             cur.execute("""
-                SELECT * FROM intents 
+                SELECT * FROM intents
                 WHERE line_user_id = %s
                   AND status != 'cancelled'
-                ORDER BY created_at DESC 
+                ORDER BY created_at DESC
                 LIMIT %s
             """, (line_user_id, limit))
             return [dict(row) for row in cur.fetchall()]
@@ -125,7 +125,6 @@ def get_today_intents(line_user_id: str):
                 ORDER BY created_at ASC
             """, (line_user_id,))
             return [dict(row) for row in cur.fetchall()]
-
 # =============================================
 # Messages
 # =============================================
